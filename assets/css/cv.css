@@ -1,0 +1,143 @@
+.page-box {
+    min-width: 40em;
+    max-width: 70em;
+}
+
+#column-left {
+    padding: 0em;
+    min-width: 15em;
+    max-width: 25em;
+}
+
+#column-left-1 {
+    padding: 1em 1em 0.5em 1em;
+}
+
+#column-left-2 {
+    padding: 0em 1em 1em 1em;
+}
+
+#column-left h2 {
+    font-size: 1.15em;
+}
+
+#column-left #pic {
+    max-width: 12.5em;
+}
+
+#column-left h4 {
+    font-size: 1em;
+}
+
+.dark-side-panel #column-left {
+    background-color: #3f5975;
+}
+
+.dark-side-panel #column-left-1 {
+    background-color: #3f5975;
+}
+
+.dark-side-panel #column-left-2 {
+    background-color: #3f5975;
+}
+
+.dark-side-panel #column-left-2 a {
+    color: #293a4c;
+}
+
+.light-side-panel #column-left {
+    background-color: #efefef;
+    color: #293a4c;
+}
+
+.light-side-panel #column-left-1 {
+    background-color: #3f5975;
+    color: white;
+}
+
+.light-side-panel #column-left-2 {
+    background-color: #efefef;
+}
+
+.light-side-panel #column-left-2 a {
+    color: #293a4c;
+}
+
+#column-right {
+    min-width: 30em;
+    max-width: 50em;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    margin-top: 1.0em;
+}
+
+#links, #copyright {
+    margin: auto;
+    max-width: 69em;
+}
+
+#links a {
+    color: #293a4c;
+}
+
+.print-only {
+    display: none;
+}
+
+@media print {
+    body * {
+      visibility: hidden;
+      -webkit-print-color-adjust: exact !important;
+      color-adjust: exact !important;
+    }
+    #links, #copyright {
+        visibility: hidden;
+    }
+    .page-box, .page-box * {
+      visibility: visible;
+      -webkit-print-color-adjust: exact !important;
+      color-adjust: exact;
+    }
+    .page-box {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 210mm;
+      height: 297mm;
+    }
+    .noprint {
+        display: none;
+    }
+    .print-only {
+        display: inline;
+    }
+
+    @page {
+        margin: 0;
+    }
+  }
+
+/* narrow screens */
+@media not print {
+    @media only screen and (max-width: 1000px) {
+        #column-left {
+            min-width: 5em;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        #column-right {
+            min-width: 5em;
+            max-width: 1000px;
+            width: 100%;
+        }
+    }
+}

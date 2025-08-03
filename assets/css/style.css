@@ -1,0 +1,194 @@
+@import url("https://unpkg.com/primer/build/build.css");
+
+body {
+    background-color: #dddddd;
+    padding: 1em;
+    font-family: "Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+}
+
+.flex {
+    display: flex;
+}
+
+.page-box {
+    margin: auto;
+    background-color: white;
+    display: flex; /* or inline-flex */
+}
+
+#column-left {
+    width: 30%;
+    padding: 1em;
+    background-color: #3f5975;
+    color: white;
+    text-align: center;
+}
+
+#column-left p {
+    margin-bottom: 0.25em;
+}
+
+#column-right {
+    width: 70%;
+    padding: 1em;
+    text-align: justify;
+}
+
+#column-right h2, #column-right h3 {
+    color: #293a4c;
+}
+
+#column-right h3 {
+    font-size: 1.2em;
+}
+
+#column-left h3 {
+    font-size: 1.1em;
+}
+
+#column-left a {
+    color: white;
+}
+
+#column-right a {
+    color: #293a4c;
+    font-weight: bold;
+}
+
+.deep-blue, .deep-blue h1, .deep-blue h2 {
+    color: #293a4c;
+}
+
+#education div {
+    margin-top: 0.5em;
+}
+
+#pic {
+    width: 80%;
+    max-width: 15em;
+    border: 0.2em solid white;
+}
+
+#profile h2 {
+    margin-top: 0px !important;
+}
+
+.b-links a {
+    color: #293a4c;
+}
+
+li {
+    margin-left: 5mm;
+}
+
+.h1-uppercase {
+    color: #293a4c;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.h2-uppercase {
+    color: #293a4c;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    margin-top: 1.0em;
+}
+
+.h-uppercase h1 {
+    color: #293a4c;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.h-uppercase h2 {
+    color: #293a4c;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    margin-top: 1.0em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+.job-title-line {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    line-height: 1;
+    margin-bottom: 0.5em;
+}
+
+.job-title-line :last-child {
+    margin-left: auto;
+  }
+
+.top-spacing {
+    margin-top: 1.0em;
+}
+
+.company {
+    /*margin-left: 0.75em;*/
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: #555555;
+    margin-bottom: 0.5em;
+}
+
+.company a {
+    color: #555555 !important;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+}
+
+.company img {
+    margin-left: 0em !important;
+    margin-right: 0.25em !important;
+    height: 14px;
+}
+
+.date {
+    color: #777777;
+    font-style: italic;
+}
+
+.small-text {
+    font-size: 85%;
+}
+
+.icon-container {
+    width: 1.75em;
+    /*display: flex;*/
+}
+
+.blue, .blue a, .blue h1 {
+    background-color: #3f5975;
+    color: white; 
+}
+
+a {
+    color: #293a4c;
+}
+
+#sidebar {
+    min-width: 15em;
+    max-width: 25em;
+    text-align: center;
+}
+
+/* narrow screens */
+@media only screen and (max-width: 1000px) {  
+    .page-box {
+        min-width: 5em !important;
+        flex-direction: column !important; 
+    }
+
+    #sidebar {
+        width: 100%;
+        max-width: 1000px;
+    }  
+ }
